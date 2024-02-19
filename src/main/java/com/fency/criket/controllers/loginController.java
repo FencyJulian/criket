@@ -14,6 +14,6 @@ public class loginController {
     @PostMapping("/login")
     public ResponseEntity<String> loginPost(@RequestBody loginUser user) {
         lrepo.save(user);
-        return ResponseEntity.status(200).body("User Logged In");
+        return ResponseEntity.status(200).body("User Data Added to Database");
     }
 }
