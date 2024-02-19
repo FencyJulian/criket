@@ -1,7 +1,9 @@
 package com.fency.criket.entities;
 
-public class loginUser {
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "loggedusers")
+public class loginUser {
     public String username;
     public String password;
 
